@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Pacifico&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Pacifico&family=Protest+Riot&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <div class ="headerline">
+     <b> Weather Journal App </b>
+   </div>
+    <div id = "app">
+      <div class="input-data">
+        <div class ="holder-zip">
+         <label for="zip">Enter Zipcode</label>
+         <input type="text" id="zip" placeholder="Enter zip code here">
+        </div>
+        <div class ="holder feel">
+          <label for="feelings">How are you feeling today?</label>
+          <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+          <button id="generate" type = "submit"> Generate </button>
+        </div>
+      </div>
+      <div class ="entryHolder">
+          <div id = "temp"></div>
+          <div id = "disc"></div>
+          <div id = "city-name"></div>
+          <div id = "content"></div>
+          <div id = "date"></div> 
+      </div>
+   </div>
+   <script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>
